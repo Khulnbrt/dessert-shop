@@ -10,9 +10,6 @@
         margin: 0;
         padding: 0;
         height: 100%; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .box{
         background-color: blue;
@@ -24,14 +21,15 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        height: 100vh;
         gap: 20px;
     }
-    @media screen and (min-width:700px){ 
+    @media screen and (max-width:700px){ 
         .big{
             flex-direction: column;
         }
     }
-    @media screen and (min-width:600px){
+    @media screen and (max-width:600px){
         .box{
             background-color: yellow;
         }
