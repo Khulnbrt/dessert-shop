@@ -14,18 +14,17 @@
         background-color: blue;
         width: 100px;
         height: 100px;
-        flex-direction: row;
+        flex-direction: column;
     }
     .big{
         display: flex;
-        
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
     @media screen only and (max-width:700px){ 
         .big{
-            flex-direction: column;
+            flex-direction: row;
         }
     }
     @media screen only and (max-width:600px){
