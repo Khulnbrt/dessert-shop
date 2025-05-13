@@ -9,7 +9,6 @@
     body, html {
         margin: 0;
         padding: 0;
-        height: 100%; 
     }
     .box{
         background-color: blue;
@@ -24,12 +23,12 @@
         height: 100vh;
         gap: 20px;
     }
-    @media screen and (max-width:700px){ 
+    @media screen only and (max-width:700px){ 
         .big{
             flex-direction: column;
         }
     }
-    @media screen and (max-width:600px){
+    @media screen only and (max-width:600px){
         .box{
             background-color: yellow;
         }
