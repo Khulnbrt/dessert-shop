@@ -3,39 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Boxes</title>
+    <style>
+        /* Box Style */
+        .box {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Container Style */
+        .big {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
+        }
+
+        /* Media Query for screen <= 700px */
+        @media only screen and (max-width: 700px) {
+            .big {
+                flex-direction: column;
+            }
+        }
+
+        /* Media Query for screen <= 400px */
+        @media only screen and (max-width: 400px) {
+            .box {
+                background-color: yellow;
+            }
+        }
+    </style>
 </head>
-<style>
-    .box{
-        background-color: blue;
-        width: 100px;
-        height: 100px;
-         gap: 20px;
-    }
-    .big{
-        
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-       
-    }
-    @media screen only and (max-width:700px){ 
-        .big{
-           
-            flex-direction: column;
-        }
-    }
-    @media screen only and (max-width:400px){
-        .box{
-            background-color: yellow;
-        }
-    }
-</style>
 <body>
     <div class="big">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
 </body>
 </html>
